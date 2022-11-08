@@ -114,7 +114,7 @@ public class AccountManager {
 				}
 			}
 			catch (MenuSelectException e) {
-				System.out.println("신용등급 입력이 잘못되었습니다ㅏ.");
+				System.out.println("신용등급 입력이 잘못되었습니다.");
 			}
 		}
 	}
@@ -150,7 +150,6 @@ public class AccountManager {
 		} catch (InputMismatchException e) {
 			System.out.println("숫자로 입력해주세요");
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
 
@@ -221,7 +220,6 @@ public class AccountManager {
 		}
 		catch (Exception e) {
 			System.out.println("정보 직렬화 중 예외발생");
-			e.printStackTrace();
 		}
 		
 	}
@@ -291,7 +289,6 @@ public class AccountManager {
 			System.out.println("파일이 생성되었습니다.");
 		}
 		catch (IOException e) {
-			e.printStackTrace();
 		}
 	}
 	
