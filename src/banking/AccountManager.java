@@ -240,23 +240,23 @@ public class AccountManager {
 		
 	}
 	
-	public void daemon(AutoSaver auto1) {
+	public void daemon(AutoSaver auto) {
 		
 		System.out.println("1.자동저장On  2.자동저장Off");
 		Scanner scan = new Scanner(System.in);
 		int select = scan.nextInt();
 		scan.nextLine();
 		if(select == 1) {
-			if(auto1.isAlive()) {
+			if(auto.isAlive()) {
 				System.out.println("이미 실행중입니다.");
 			}else{
 				System.out.println("자동저장On");
-				auto1.start();
+				auto.start();
 			}
 		}
 		else if(select == 2) {
 			System.out.println("자동저장Off");
-			auto1.interrupt();
+			auto.interrupt();
 		}
 			
 	}
