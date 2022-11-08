@@ -7,6 +7,9 @@ public class BankingSystemMain {
 
 	public static void main(String[] args) {
 
+		System.out.println("1차프로젝트(학원)");
+		
+		
 		Scanner scan = new Scanner(System.in);
 		
 		AccountManager manager = new AccountManager();		
