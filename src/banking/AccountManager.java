@@ -55,14 +55,14 @@ public class AccountManager {
 			if (hacc.add(NA))
 				hacc.add(NA);
 			else {
-				System.out.println("이미 있는 계좌입니다. 덮어씌울까요?? y or n");
+				System.out.println("이미 있는 계좌입니다. 갱신할까요?? y or n");
 				try {
 					String yn = scan.nextLine();
 					if(!(yn.equalsIgnoreCase("y"))) {
 						System.out.println("Y(y) 또는 N(n)을 입력하세요");
 					}
 					else if (yn.equalsIgnoreCase("y")) {
-						System.out.println("덮어씌웁니다.");
+						System.out.println("갱신했습니다.");
 						//HashSet에 있는 보통계좌를 꺼내고
 						hacc.remove(NA);
 						//HashSet에 보통계좌를 추가
@@ -94,14 +94,14 @@ public class AccountManager {
 				if (hacc.add(HA))
 					hacc.add(HA);
 				else {
-					System.out.println("이미 있는 계좌입니다. 덮어씌울까요?? y or n");
+					System.out.println("이미 있는 계좌입니다. 갱신할까요?? y or n");
 					try {
 						String yn = scan.nextLine();
 						if(!(yn.equalsIgnoreCase("y"))) {
 							System.out.println("Y(y) 또는 N(n)을 입력하세요");
 						}
 						if (yn.equalsIgnoreCase("y")) {
-							System.out.println("덮어씌웁니다.");
+							System.out.println("갱신했습니다.");
 							hacc.remove(HA);
 							hacc.add(HA);
 							System.out.println("계좌 개설이 완료되었습니다.");
