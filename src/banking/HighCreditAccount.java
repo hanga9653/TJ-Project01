@@ -28,8 +28,8 @@ public class HighCreditAccount extends Account implements ICustomDefine{
 	public void showAccounts() {
 		System.out.println("***계좌정보출력***");
 		System.out.println("계좌번호: " + accountnumber);
-		System.out.println("이름: " + name + "잔고: " + balance);
-		System.out.println("기본이율:" + rate+"%" + "신용등급:" + grade);
+		System.out.println("이름: " + name + " 잔고: " + balance);
+		System.out.println("기본이율:" + rate+"%" + " 신용등급:" + grade);
 		System.out.println("******************");
 		System.out.println();
 	}
