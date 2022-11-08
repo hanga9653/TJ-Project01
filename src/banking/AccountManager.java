@@ -240,23 +240,23 @@ public class AccountManager {
 		
 	}
 	
-	public void daemon(AutoSaver auto) {
+	public void daemon(AutoSaver auto1) {
 		
 		System.out.println("1.자동저장On  2.자동저장Off");
 		Scanner scan = new Scanner(System.in);
 		int select = scan.nextInt();
 		scan.nextLine();
 		if(select == 1) {
-			if(auto.isAlive()) {
+			if(auto1.isAlive()) {
 				System.out.println("이미 실행중입니다.");
 			}else{
 				System.out.println("자동저장On");
-				auto.start();
+				auto1.start();
 			}
 		}
 		else if(select == 2) {
 			System.out.println("자동저장Off");
-			auto.interrupt();
+			auto1.interrupt();
 		}
 			
 	}
@@ -272,7 +272,7 @@ public class AccountManager {
 							((NormalAccount)ac1).accountnumber,
 							((NormalAccount)ac1).name,
 							((NormalAccount)ac1).balance,
-							((NormalAccount)ac1).rate);
+							((NormalAccount)ac1).rate);					
 					out.println();
 				}
 				else if(ac1 instanceof HighCreditAccount) {

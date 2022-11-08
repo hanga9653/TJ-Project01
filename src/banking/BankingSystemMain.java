@@ -9,7 +9,7 @@ public class BankingSystemMain {
 
 		Scanner scan = new Scanner(System.in);
 		
-		AccountManager manager = new AccountManager();
+		AccountManager manager = new AccountManager();		
 		AutoSaver auto = new AutoSaver(manager);
 		auto.setDaemon(true);
 		manager.readAccoountInfo();
