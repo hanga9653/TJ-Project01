@@ -12,7 +12,8 @@ public class InsertShop extends IConnect1Impl{
 	@Override
 	public void execute() {
 		String query = "INSERT INTO sh_goods " 
-				+ " (g_idx, goods_name, goods_price, p_code)VALUES  (seq_total_idx.nextval, ?, ?, ?) " ;
+				+ " (g_idx, goods_name, goods_price, p_code)VALUES "
+				+ " (seq_total_idx.nextval, ?, ?, ?) " ;
 		try {
 			psmt = con.prepareStatement(query);
 			

@@ -16,11 +16,10 @@ public class AutoSaver extends Thread{
 		while(true) {
 			try {
 				sleep(5000);
-				System.out.println("정보 저장중");
+//				System.out.println("정보 저장중");
 				am.AutoSaveAccountFile();
 			}
 			catch (InterruptedException e) {
-				System.out.println("자동저장종료");
 				break;
 			}
 		}

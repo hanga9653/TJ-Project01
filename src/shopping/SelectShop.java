@@ -16,7 +16,7 @@ public class SelectShop extends IConnect1Impl{
 			String scan  = scanValue("찾는 이름");
 			stmt = con.createStatement();
 			//sql과 java를 섞어서 문장 만들기
-			String print = "SELECT g_idx, goods_name, to_char(goods_price, '999,000') price, "
+			String print = "SELECT g_idx, goods_name, trim(to_char(goods_price, 'L999,990')), "
 					+ " to_char(regidate, 'yyyy-mm-dd hh:mi'),  p_code  "
 					+ " FROM sh_goods "
 					+ " WHERE goods_name LIKE '%"+ scan +"%'";

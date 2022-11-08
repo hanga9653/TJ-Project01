@@ -46,9 +46,7 @@ public class BankingSystemMain {
 					}
 				}
 			catch (MenuSelectException mse) {
-				System.out.println(mse.getMessage());
-				mse.printStackTrace();
-				System.out.println();
+				System.out.println("해당메뉴가 없습니다.");
 			}
 			
 			catch (InputMismatchException e) {
